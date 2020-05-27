@@ -118,13 +118,8 @@ while(i!=5):
         s.quit()
         print("Model trained to an accuracy of: " + accuracy)
         break
-    '''elif accuracy>.50:
-        #model=load_model('MNISTClassifier.h5')
-        popped_output=model.pop()
-        addDense(model, random.randint(1,3))
-        print("Training the model for the "+ i +"th time by adding only Dense layers!")'''
     else:
-	popped_output=model.pop()
+        popped_output=model.pop()
         #addCRP(model, random.randint(1,2))
         addDense(model, random.randint(1,3))
         print("Training the model for the "+ i +"th time by adding CRP and Dense layers!")
