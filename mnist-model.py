@@ -124,7 +124,7 @@ while(i!=5):
         addDense(model, random.randint(1,3))
         print("Training the model for the "+ i +"th time by adding only Dense layers!")'''
     else:
-        popped_output=model.pop()
+	popped_output=model.pop()
         #addCRP(model, random.randint(1,2))
         addDense(model, random.randint(1,3))
         print("Training the model for the "+ i +"th time by adding CRP and Dense layers!")
