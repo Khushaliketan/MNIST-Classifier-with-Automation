@@ -1,0 +1,11 @@
+from tensorflow/tensorflow
+RUN pip3 install numpy
+RUN pip3 install pandas
+RUN pip3 install keras
+RUN pip3 install opencv-python
+RUN pip3 install pillow
+
+RUN mkdir /root/mnist-model/
+VOLUME /root/mnist-model/
+
+CMD python3 /root/mnist-model/mnist-model.py
